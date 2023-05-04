@@ -1,10 +1,6 @@
 <?php
 require 'config.php';
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 185fc17 (Completed Design of Frontend web application - Insert, Filter, and Reset)
 // Set default values for filters
 $employee_name = isset($_POST['employee_name']) ? $_POST['employee_name'] : '';
 $event_name = isset($_POST['event_name']) ? $_POST['event_name'] : '';
@@ -13,13 +9,8 @@ $event_date = isset($_POST['event_date']) ? $_POST['event_date'] : '';
 // Build the SQL query with the filters
 $sql = "SELECT employees.employee_name, events.event_name, events.event_date, participations.participation_fee
         FROM participations
-<<<<<<< HEAD
         INNER JOIN employees ON employees.employee_id = participations.employee_id
         INNER JOIN events ON events.event_id = participations.event_id";
-=======
-        INNER JOIN employees ON employees.id = participations.employee_id
-        INNER JOIN events ON events.id = participations.event_id";
->>>>>>> 185fc17 (Completed Design of Frontend web application - Insert, Filter, and Reset)
 
 if ($employee_name !== '') {
     $sql .= " AND employees.employee_name LIKE '%$employee_name%'";
