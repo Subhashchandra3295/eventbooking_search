@@ -1,0 +1,57 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        margin: 0;
+    }
+
+    form {
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+
+    label {
+        display: inline-block;
+        width: 140px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="submit"]
+    input[type="reset"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tfoot td {
+        font-weight: bold;
+    }
